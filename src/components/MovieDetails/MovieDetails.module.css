@@ -3,10 +3,37 @@
 }
 
 .moviePosterImg {
-  width: 300px;
+  width: 250px;
   margin: 10px;
 }
 
 .movieInfo {
   margin-left: 20px;
+}
+
+.addInfoLink {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 5px;
+}
+
+.activeInfoLink {
+  font-weight: 700;
+  color: blue;
+}
+
+.goBackBtn {
+  width: 100px;
+  height: 30px;
+  margin: 15px;
+  background-color: rgba(255, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-transform: capitalize;
+}
+.goBackBtn:hover,
+.goBackBtn:focus {
+  background-color: rgba(255, 0, 0, 0.7);
 }

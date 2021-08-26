@@ -39,8 +39,9 @@ class MoviesApi {
   }
   //------------
 
-  async fetchMoviesByQuery() {
+  async fetchMoviesByQuery(query) {
     this.currentRequest = 'search';
+    this.searchQuery = query;
     const url = `${BASE_URL}/search/movie?api_key=${API_KEY}&language=ru&page=${this.page}&include_adult=false&query=${this.searchQuery}`;
 
     try {
@@ -61,6 +62,32 @@ class MoviesApi {
       const response = await fetch(url);
       const movie = response.json();
       return movie;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async fetchMovieCast(id) {
+    const url = `${BASE_URL}/movie/${id}/credits?api_key=${API_KEY}&language=ru`;
+
+    try {
+      const response = await fetch(url);
+      const info = await response.json();
+      const cast = info.cast;
+      return cast;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async fetchMovieReviews(id) {
+    const url = `${BASE_URL}/movie/${id}/reviews?api_key=${API_KEY}&language=en`;
+
+    try {
+      const response = await fetch(url);
+      const info = await response.json();
+      const reviews = info.results;
+      return reviews;
     } catch (error) {
       console.log(error);
     }

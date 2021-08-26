@@ -1,0 +1,6 @@
+.movieLink {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 5px;
+}

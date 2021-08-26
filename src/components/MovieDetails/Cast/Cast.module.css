@@ -1,0 +1,14 @@
+.castItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.castImg {
+  width: 150px;
+}
+
+.castName {
+  margin: 5px 0;
+  font-weight: 700;
+}

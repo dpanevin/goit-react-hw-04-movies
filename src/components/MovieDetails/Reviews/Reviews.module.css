@@ -1,0 +1,9 @@
+.reviewItem {
+  margin-bottom: 20px;
+}
+
+.reviewAuthor {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}

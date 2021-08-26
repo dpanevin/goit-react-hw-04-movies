@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import moviesApi from 'utils/MoviesApi';
+import styles from 'components/HomePage/HomePage.module.css';
 
 export default function HomePage() {
+  const location = useLocation();
   const [movies, setMovies] = useState(null);
 
   useEffect(() => fetchTrendingMovies(), []);
@@ -22,7 +24,15 @@ export default function HomePage() {
           movies.map(movie => {
             return (
               <li key={movie.id}>
-                <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
+                <Link
+                  className={styles.movieLink}
+                  to={{
+                    pathname: `/movies/${movie.id}`,
+                    state: { from: location },
+                  }}
+                >
+                  {movie.title}
+                </Link>
               </li>
             );
           })}
