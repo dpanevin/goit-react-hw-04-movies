@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { Link, useHistory, useLocation } from 'react-router-dom';
-import { useEffect } from 'react/cjs/react.development';
 import moviesApi from 'utils/MoviesApi';
 import styles from './Movies.module.css';
 

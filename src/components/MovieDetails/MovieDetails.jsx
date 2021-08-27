@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense, useEffect } from 'react';
 import {
   NavLink,
   Switch,
@@ -8,7 +8,6 @@ import {
   useHistory,
   useLocation,
 } from 'react-router-dom';
-import { useEffect } from 'react/cjs/react.development';
 import Loader from 'react-loader-spinner';
 import moviesApi from 'utils/MoviesApi';
 import styles from 'components/MovieDetails/MovieDetails.module.css';
