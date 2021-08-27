@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/MovieDetails/Reviews/Reviews.module.css"],"names":[],"mappings":"AAAA,2BACE,kBACF,CAEA,6BACE,oBAAqB,CACrB,eAAgB,CAChB,iBACF","file":"Reviews.a2b835f6.chunk.css","sourcesContent":[".reviewItem {\n  margin-bottom: 20px;\n}\n\n.reviewAuthor {\n  display: inline-block;\n  font-weight: 700;\n  margin-bottom: 5px;\n}\n"]}

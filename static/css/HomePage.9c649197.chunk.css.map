@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/HomePage/HomePage.module.css"],"names":[],"mappings":"AAAA,2BACE,oBAAqB,CACrB,oBAAqB,CACrB,aAAc,CACd,iBACF","file":"HomePage.9c649197.chunk.css","sourcesContent":[".movieLink {\n  display: inline-block;\n  text-decoration: none;\n  color: inherit;\n  margin-bottom: 5px;\n}\n"]}
