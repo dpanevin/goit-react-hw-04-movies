@@ -57,7 +57,7 @@ export default function Movies() {
           type="text"
           autoComplete="off"
           autoFocus
-          placeholder="Поиск изображений и фото"
+          placeholder="Поиск фильмов"
           onChange={onChange}
           value={query}
         />
